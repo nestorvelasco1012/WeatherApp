@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01R-SU-5pL">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brownsville" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUL-41-wmA">
+                                <rect key="frame" x="145" y="99" width="103" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOE-tI-Tu1">
+                                <rect key="frame" x="168.66666666666666" y="129" width="56" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunny" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqj-Te-pwe">
+                                <rect key="frame" x="173" y="385" width="47" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPr-X7-7dh">
+                                <rect key="frame" x="163" y="434" width="67" height="82"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01d" translatesAutoresizingMaskIntoConstraints="NO" id="gu8-H0-KSm">
+                                <rect key="frame" x="96.666666666666686" y="183" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="asa-ah-uVo"/>
+                                    <constraint firstAttribute="width" constant="200" id="mon-b0-3t8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="℃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADE-CO-O83">
+                                <rect key="frame" x="238" y="477" width="20" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="01R-SU-5pL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="24P-40-H0Z"/>
+                            <constraint firstItem="YUL-41-wmA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="6rv-I0-vdy"/>
+                            <constraint firstItem="gu8-H0-KSm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9w4-Qi-nQL"/>
+                            <constraint firstAttribute="trailing" secondItem="01R-SU-5pL" secondAttribute="trailing" id="HPe-qb-zYX"/>
+                            <constraint firstItem="gPr-X7-7dh" firstAttribute="top" secondItem="tqj-Te-pwe" secondAttribute="bottom" constant="25" id="IbH-CU-5H7"/>
+                            <constraint firstItem="tqj-Te-pwe" firstAttribute="top" secondItem="gu8-H0-KSm" secondAttribute="bottom" constant="2" id="MvS-bo-2YW"/>
+                            <constraint firstItem="gOE-tI-Tu1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NIR-wy-4DQ"/>
+                            <constraint firstItem="gPr-X7-7dh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y6W-7k-C7d"/>
+                            <constraint firstItem="ADE-CO-O83" firstAttribute="leading" secondItem="gPr-X7-7dh" secondAttribute="trailing" constant="8" symbolic="YES" id="fmF-2u-YYO"/>
+                            <constraint firstItem="tqj-Te-pwe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hps-f3-Dpk"/>
+                            <constraint firstAttribute="bottom" secondItem="01R-SU-5pL" secondAttribute="bottom" id="l68-cd-wyP"/>
+                            <constraint firstItem="ADE-CO-O83" firstAttribute="top" secondItem="gPr-X7-7dh" secondAttribute="bottom" constant="-39" id="og8-Db-8d8"/>
+                            <constraint firstItem="gu8-H0-KSm" firstAttribute="top" secondItem="gOE-tI-Tu1" secondAttribute="bottom" constant="30" id="sLB-An-cDr"/>
+                            <constraint firstItem="01R-SU-5pL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="th9-ji-bfw"/>
+                            <constraint firstItem="gOE-tI-Tu1" firstAttribute="top" secondItem="YUL-41-wmA" secondAttribute="bottom" constant="2" id="uWB-GM-8xC"/>
+                            <constraint firstItem="YUL-41-wmA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v8f-YJ-Pq0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="01R-SU-5pL" id="JRo-Fe-SQe"/>
+                        <outlet property="conditionImageView" destination="gu8-H0-KSm" id="DS0-KC-Cr3"/>
+                        <outlet property="conditionLabel" destination="tqj-Te-pwe" id="6mU-kn-DY9"/>
+                        <outlet property="dayLabel" destination="gOE-tI-Tu1" id="0MQ-eO-jho"/>
+                        <outlet property="locationLabel" destination="YUL-41-wmA" id="e9Z-LY-whu"/>
+                        <outlet property="temperatureLabel" destination="gPr-X7-7dh" id="0Oh-ru-TYK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="01d" width="512" height="512"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
